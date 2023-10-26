@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Map from './Map';
-import config from './frontendConfig';
 
 const GoogleMapsAPI = new Promise((res, err) => {
   const script = document.createElement('script');
@@ -9,7 +8,7 @@ const GoogleMapsAPI = new Promise((res, err) => {
   script.onerror = err;
   script.async = true;
   script.src =
-    'https://maps.googleapis.com/maps/api/js?key=' + config.GOOGLE_MAPS_KEY;
+    'https://maps.googleapis.com/maps/api/js?key=';
 });
 
 const Maps = props => {
