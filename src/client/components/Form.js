@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Input from './Input';
 
 // Handles selecting "other"s radio button when selecting its text input
